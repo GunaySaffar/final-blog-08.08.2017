@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>slider example</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<style >
+  .blog-img{
+    margin-bottom: 30px;
+    position:relative;
+  }
+  .polosa{
+  width:2400px;
+  }
+  .blog-img:hover{
+  transition:all .5s ease;
+  }
+  .btn-left{
+  transition: all 0.5s ease;
+  left:0px;
+  display:block;
+  }
+  .btn-right{
+  right:-30px;
+  }
+  }
+  .slidImg img{
+    display: inline-block;
+  }
+  .myBtn{
+  width:100%;
+  }
+  .btn-left{
+  display:none;
+  left:-30px;
+  width:0px;
+  height:0px;
+  position:absolute;
+  top:115px;
+  border-top:50px solid transparent;
+  border-left:60px solid green;
+  border-bottom:50px solid transparent;
+  }
+  
+  .btn-right{
+  width:0px;
+  height:0px;
+  position:absolute;
+  right:-90px;
+  top:115px;
+  border-top:50px solid transparent;
+  border-right:60px solid green;
+  border-bottom:50px solid transparent;
+  }
+  .btn-right:hover{
+  right:-30px;
+  }
+  .btns{
+  position:absolute;
+  top:200px;
+  left:200px;
+  height:10px;
+  width:10px;
+  padding:0;
+  cursor:pointer;
+  border-radius: 50%;
+  border: 2px solid  white;
+  background-color: red;
+  margin-right: 10px;
+}
+</style>
+<body>
+<div class="container">
+  <div class="row">
+    <div class="blog-img">
+            <div class="ramka">
+              <div class="polosa">
+                <div class="slidBox">
+                  <div class="slider1">
+  <div class="slide"><img src="http://placehold.it/350x150&text=FooBar1"></div>
+  <div class="slide"><img src="http://placehold.it/350x150&text=FooBar2"></div>
+  <div class="slide"><img src="http://placehold.it/350x150&text=FooBar3"></div>
+  <div class="slide"><img src="http://placehold.it/350x150&text=FooBar4"></div>
+  <div class="slide"><img src="http://placehold.it/350x150&text=FooBar5"></div>
+  <div class="slide"><img src="http://placehold.it/350x150&text=FooBar6"></div>
+  <div class="slide"><img src="http://placehold.it/350x150&text=FooBar7"></div>
+  <div class="slide"><img src="http://placehold.it/350x150&text=FooBar8"></div>
+  <div class="slide"><img src="http://placehold.it/350x150&text=FooBar9"></div>
+</div>
+                  <div class="myBtn">
+                    <div class="btn-left">
+                    
+                    </div>
+                    <div class="btn-right">
+                    
+                    </div>
+                  </div>
+                  <div >
+                  <button class="btns" onclick="slidermoveLeft()"></button>
+                  <button class="btns" onclick="slidermoveRight()"></button>
+                  <button class="btns" onclick="slidermoveRight()"></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
